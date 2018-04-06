@@ -121,13 +121,13 @@ function Enemy(pos, ch) {
     this.size = new Vector(1, 1);
     if (ch == "*") {
       // Horizontal lava
-      this.speed = new Vector(2, 0);
+      this.speed = new Vector(3, 0);
     } else if (ch == "^") {
       // Vertical lava
-      this.speed = new Vector(0, 2);
+      this.speed = new Vector(0, 3);
     } else if (ch == "&") {
       // Drip lava. Repeat back to this pos.
-      this.speed = new Vector(0, 3);
+      this.speed = new Vector(0, 4);
       this.repeatPos = pos;
     }
   }
@@ -322,7 +322,7 @@ BadTP.prototype.act = function(step, level) {
 
 var maxStep = 0.05;
 
-var wobbleSpeed = 8, wobbleDist = 0.07;
+var wobbleSpeed = 10, wobbleDist = 0.07;
 
 Coin.prototype.act = function(step) {
   this.wobble += step * wobbleSpeed;
