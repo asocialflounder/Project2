@@ -1,0 +1,41 @@
+.background    { background-image: url(musicscore.png);
+                 table-layout: fixed;
+                 border-spacing: 0;
+               }
+.background td { padding: 0;
+               }
+.lava          { background:#660000;
+               }
+.wall          { background: black;
+               }
+.teleport      { background-image: url(teleport.png);
+               }
+
+.actor         { position: absolute;
+               }
+.coin          { background-image: url(sharpcoin.png);
+                 background-size: 12px 12px;
+               }
+.enemy          { background-image: url(enemy1.png);
+                 background-size: 20px 20px;
+               }
+.player        { background-image: url(playercleff.png);
+               }
+
+.badtp         {background-image: url(badportal.png);}
+.sonic          { background-image: url(sonic.png);
+                 background-size: 12px 12px;
+               }
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background-image: url(playerdeath.png);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
